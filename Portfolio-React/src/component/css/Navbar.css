@@ -1,0 +1,64 @@
+.Title {
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+  padding: 20px 120px 20px 90px;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  z-index: 2; 
+}
+.Port {
+  text-decoration: none;
+  margin: 0;
+  font-size: 22px;
+  color: #fff;
+}
+
+.Title :hover{
+  color: #c9eeff;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list a {
+  padding-left: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+  .Title {
+    padding: 20px 30px; 
+    max-width: 100%; 
+  }
+
+  .Port {
+    text-decoration: none;
+    margin: 0;
+    font-size: 17px;
+    color: #fff;
+  }
+
+  .list {
+    display: flex;
+    gap: 10px;
+    flex-direction:row; 
+    font-size: 13px;
+    text-align: center; 
+  }
+
+  .list a {
+    text-align: center; 
+    padding: 10px 0; 
+  }
+}
